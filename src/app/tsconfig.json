@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "noEmit": false,
+    "baseUrl": "./",
+    "outDir": "../../build",
+    "skipLibCheck": true
+  },
+  "include": ["./**/*", "../src/react-app-env.d.ts"]
+}
