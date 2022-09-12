@@ -9,8 +9,8 @@ const contextApplication = {
         chrome: () => process.versions.chrome,
         electron: () => process.versions.electron,
     },
-    setAppSize: (width: number, height: number) => { ipcRenderer.send('setSize', width, height) },
-    setAppResizable: (resizable: boolean) => { ipcRenderer.send('setResizable', resizable); },
+    setAppSize: (width: number, height: number) => { ipcRenderer.send('setAppSize', width, height) },
+    setAppResizable: (resizable: boolean) => { ipcRenderer.send('setAppResizable', resizable); },
     isDevelopment: () => process.env.NODE_ENV === 'development'
 }
 
